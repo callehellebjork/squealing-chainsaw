@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace auseTxtGame
 {
@@ -36,6 +37,12 @@ namespace auseTxtGame
             Console.ReadKey();
             Console.Clear();
             trixPrint("hello traveler");
+            Thread.Sleep(1000);
+            playerPrint("who are you?");
+            Thread.Sleep(1000);
+            trixPrint("im trix im your guide to this new world");
+            Thread.Sleep(1000);
+            trixPrint("your memory has been erased and you was chosen to fortify this island");
 
         }
     }
