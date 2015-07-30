@@ -11,7 +11,7 @@ namespace inventorytest
         public static void invent()
         {
             string[] inv = new string[20];
-            inv[0] = "bukkit of milk";
+            inv[0] = "empty";
             inv[1] = "empty";
             inv[2] = "empty";
             inv[3] = "empty";
@@ -30,7 +30,8 @@ namespace inventorytest
             inv[16] = "empty";
             inv[17] = "empty";
             inv[18] = "empty";
-            inv[19] = "poop";
+            inv[19] = "empty";
+            
            
                 Console.Write("show the item in slot: ");
                 string preInvint = Console.ReadLine();

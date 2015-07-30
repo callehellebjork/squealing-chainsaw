@@ -79,10 +79,8 @@ namespace auseTxtGame
                     case "plant a seed":
                         break;
 
-                    case "decorate":
-                        break;
-
                     case "inventory":
+                        inventorytest.Program.invent();
                         break;
 
                     case "":
