@@ -65,7 +65,7 @@ namespace auseTxtGame
             setup();
             //prints you the intro
             //usage intro.startIntro()
-            intro.startIntro();
+           // intro.startIntro();
             trixPrint("type help to see what you can do.");
             while(gameOn)
             {

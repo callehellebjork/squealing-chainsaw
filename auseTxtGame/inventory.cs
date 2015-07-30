@@ -8,6 +8,22 @@ namespace inventorytest
 {
     class Program
     {
+        public static void addItemtoInv()
+        {
+            Console.WriteLine("what slot would you like to place your item");
+            string preAddItem = Console.ReadLine();
+            int invint = Convert.ToInt32(preAddItem);
+        }
+
+
+        public static void overrideInv(Int32 replace)
+        {
+            Console.WriteLine("do you want to override?");
+            string preInvovr = Console.ReadLine();
+            int invint = Convert.ToInt32(preInvovr);
+        }
+        
+        
         public static void invent()
         {
             string[] inv = new string[20];
