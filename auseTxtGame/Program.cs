@@ -18,12 +18,12 @@ namespace auseTxtGame
             //sets the console title text
             Console.Title = "ause text game";
             //changes the color of the text
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Gray;
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Black;
             print("right click the console, go to fonts and set the size to 24.");
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Yellow;
         }
 
         static void Main(string[] args)
