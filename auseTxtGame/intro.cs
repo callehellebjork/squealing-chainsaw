@@ -9,8 +9,8 @@ namespace auseTxtGame
 {
     class intro
     {
-        
 
+     
 
         //makes "trix" talk in a special color and put the trix prefix before the string
         //usage trixPrint(sting, int)
@@ -42,6 +42,7 @@ namespace auseTxtGame
 
         public static void startIntro()
         {
+            //makes the user press any key to start the intro
             systemPrint("press any key if you are ready!");
             Console.ReadKey();
             Console.Clear();
@@ -51,7 +52,7 @@ namespace auseTxtGame
             trixPrint("your memory has been erased and you was chosen to fortify this island", 4);
             trixPrint("lets start by looking around!",  0);
             systemPrint("type 'look' to look around");
-           
+           //makes the user look around
             string inputLook = Console.ReadLine();
             if (inputLook == "look")
              {
@@ -67,6 +68,7 @@ namespace auseTxtGame
                     trixPrint("check what seeds we have!", 1);
                     systemPrint("type 'check seeds' to look what seeds you have");
                     string inputSeed = Console.ReadLine();
+                    //checks what seeds you have
                     if (inputSeed == "check seeds")
                     {
                         string seed1 = "Cucumber, ", seed2 = "grapes, ", seed3 = "melon, ", seed4 = "raspberry";
@@ -107,8 +109,43 @@ namespace auseTxtGame
 
                 }
              }
+    
+
+
             trixPrint("come on lets go explore!", 1);
-            systemPrint("type 'go explore' to start exploring!");   
+            systemPrint("type 'go explore' to start exploring!");
+            string introExploring = Console.ReadLine();
+            Console.Clear();
+            string[] inv = new string[1];
+            trixPrint("lets go south!", 2);
+            systemPrint("type 'go south' to move south tip remember the way home!");
+            Console.ReadLine();
+            trixPrint("now try looking around!", 1);
+            string introLook = Console.ReadLine();
+            if(introLook == "look")
+            {
+                trixPrint("ohh there is a bukkit! pick up Y/N?", 1);
+                string pickupOr = Console.ReadLine();
+                inv[1] = "bukkit";
+                trixPrint("maybe we can use this bukkit to milk the cow!", 1);
+            }
+            trixPrint("now we can go home", 1);
+            string input = Console.ReadLine();
+            if(input == "go to home")
+            {
+                trixPrint("well now i think you get this try doing it yourself!", 0);
+                trixPrint("quest, milk the cow", 0);
+                
+               
+
+            }
+            input = Console.ReadLine();
+            if (input == "milk cow")
+            {
+                inv[1] = "bukkit of milk";
+                trixPrint("congratulations you have completed your first quest!", 1);
+            }
+
         }
     }
 }
