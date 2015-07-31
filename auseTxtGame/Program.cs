@@ -77,6 +77,7 @@ namespace auseTxtGame
                         break;
 
                     case "plant a seed":
+                        planting.plant();
                         break;
 
                     case "inventory":

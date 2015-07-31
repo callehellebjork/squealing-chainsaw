@@ -8,11 +8,18 @@ namespace inventorytest
 {
     class Program
     {
+        public static void isSlottaken()
+        {
+
+        }
+
+
         public static void addItemtoInv()
         {
             Console.WriteLine("what slot would you like to place your item");
             string preAddItem = Console.ReadLine();
             int invint = Convert.ToInt32(preAddItem);
+           
         }
 
 
